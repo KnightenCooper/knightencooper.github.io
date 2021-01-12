@@ -26,4 +26,5 @@ main {
 p {
   font-size: large;
   text-align: left;
+  margin: 10px 10px 10px;
 }
