@@ -1,0 +1,10 @@
+@media only screen and (max-width: 37.5em) {
+    /* 2 columns and has correct width */ 
+        main {
+            grid-template-columns: 1fr;
+        } 
+    
+        .title {
+            font-size: 0.9rem;
+            }
+    }
