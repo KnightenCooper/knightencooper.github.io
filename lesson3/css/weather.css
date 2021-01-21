@@ -1,0 +1,27 @@
+
+ul { /* SOURCE: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+
+
+  li { /* SOURCE: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+    float: left;
+  }
+  
+  li a { /* SOURCE: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  li a:hover { /* SOURCE: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+    background-color: #111;
+  }
