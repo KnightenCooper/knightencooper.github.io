@@ -1,27 +1,88 @@
+.footertext {
+  padding-top: 25px;
+  text-align: center;
+  color:black;
+  vertical-align: middle;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
 
-ul { /* SOURCE: https://www.w3schools.com/css/css_navbar_horizontal.asp */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+.footerlink {
+  color: black;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+
+.yellowfootertext {
+  text-align: center;
+  color: black;
+  vertical-align: middle;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+  
+.icon {
+  width: 50px;
+  height: auto;
+}
+.font {
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+
+.container {
+  border: 15px solid #ffcc5c;
+  display: flex;
+}
+
+.container > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  width: 25%;
+}
+@media only screen and (max-width: 32.5em) {
+
+  .container {
+    flex-wrap: wrap; 
+  }
+
+  .container > div:nth-child(1) {
+    background-color: white;
+    width: 100%;	
   }
   
+  .container > div:nth-child(2) {
+    background-color: white;
+    width: 100%;	
+  }
+  
+  .container > div:nth-child(3) {
+    background-color: white;
+    width: 100%;	
+  }
+  
+  .container > div:nth-child(4) {
+    background-color: white;
+    width: 100%;	
+  }
+}
 
 
-  li { /* SOURCE: https://www.w3schools.com/css/css_navbar_horizontal.asp */
-    float: left;
-  }
-  
-  li a { /* SOURCE: https://www.w3schools.com/css/css_navbar_horizontal.asp */
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  
-  li a:hover { /* SOURCE: https://www.w3schools.com/css/css_navbar_horizontal.asp */
-    background-color: #111;
-  }
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
+}
+
+.container > div:nth-child(1) {
+  background-color: white;
+}
+
+.container > div:nth-child(2) {
+  background-color: white;
+}
+
+.container > div:nth-child(3) {
+  background-color: white;
+}
+
+.container > div:nth-child(4) {
+  background-color: white;
+}
