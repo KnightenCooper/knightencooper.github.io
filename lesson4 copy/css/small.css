@@ -1,0 +1,151 @@
+/* Small/Phone View ***************/
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+  background-color: #EBF8FF;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 61px;
+}
+.navigation {
+	list-style: none;
+  padding: 0;
+  max-height: 35px;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: right;
+	text-decoration: none;
+	color: #06080E;
+  font-weight: 700;
+  background-color: #EBF8FF;
+  text-align: center;
+  z-index: 9999;
+}
+.navigation a:hover {
+	color: white;
+	background-color: #06080E;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+  display: block;
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+  }
+  
+ul {
+    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-row: 3;
+  }
+  .navigation {
+    align-content: center;
+    max-width: 760px;
+    float: center;
+  }
+
+  .topbox {
+    position: absolute;
+    background-color: #EBF8FF; 
+    height: 129px;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  .logo {
+    left: 60px;
+  }
+}
+
+
+
+.bottombox {
+  position: relative;
+  background-color: #EBF8FF; 
+  height: 100px;
+  border-radius: 10px;
+
+}
+
+.footertext {
+  padding-top: 25px;
+  text-align: center;
+  color:#06080E;
+  vertical-align: middle;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+.footerlink {
+  color: #06080E;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+.yellowfootertext {
+  text-align: center;
+  color: #06080E;
+  vertical-align: middle;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+
+
+
+
+ 
+.font {
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+  color: #2D3047;
+  font-size: 2ch;
+  padding: 20px;
+}
+
+  
+.logo {
+  width: 50px;
+  height: auto;
+  grid-column: 1;
+  grid-row: 1;
+  display:inline;
+  position: relative;
+  top: 18px;
+}
+
+.topTitle {
+    color: #06080E;
+    grid-column: 2;
+    grid-row: 1;
+    display:block;
+    position: relative;
+    top: -19px;
+    font-size: large;
+}
+
+.topMotto {
+  color: #06080E;
+  grid-column: 2;
+  grid-row: 1;
+  display:block;
+  font-size: small;
+  
+}
