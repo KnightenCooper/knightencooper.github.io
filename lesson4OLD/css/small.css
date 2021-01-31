@@ -1,0 +1,92 @@
+/* Small/Phone View ***************/
+
+
+nav {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: inline;
+	padding: 1.2rem 1.5rem 2.1rem 1.5rem;
+	text-align: center;
+	text-decoration: none;
+    color: black;
+}
+.navigation a:hover {
+	color: white;
+	background-color: black;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+    display: block;    
+}
+
+header {
+    background-color: lightblue;
+}
+
+/* from source: This makes small view hamburger next to title ie inline with title & logo*/
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 70px;
+  }
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+  
+.font {
+    font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+    color: #2D3047;
+    font-size: 2ch;
+    padding: 20px;
+  }
+
+    
+.logo {
+    width: 50px;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+    display:inline;
+    position: relative;
+    top: 18px;
+  }
+
+  .topTitle {
+      grid-column: 2;
+      grid-row: 1;
+      display:block;
+      position: relative;
+      top: -19px;
+      font-size: large;
+  }
+
+  .topMotto {
+    grid-column: 2;
+    grid-row: 1;
+    display:block;
+    font-size: small;
+    
+}
+  
