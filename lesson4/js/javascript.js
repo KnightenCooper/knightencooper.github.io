@@ -33,5 +33,3 @@ document.querySelector("#last_modified").innerHTML = weekday + ", " + numberDate
 
 
 // gets current year and stores in year
-
-

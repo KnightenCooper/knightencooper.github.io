@@ -1,88 +1,85 @@
 /* Small/Phone View ***************/
-nav {
-	margin: 0 auto;
-	max-width: 760px;
-  background-color: #EBF8FF;
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 61px;
-}
+
 .navigation {
 	list-style: none;
-  padding: 0;
-  max-height: 35px;
+	padding: 0em;
+  background-color: #FFFF;
+  border: 15px solid #F8B62D;
 }
+
 .navigation li:first-child {
 	display: block;
 }
 .navigation li {
-	display: none;
+  display: none;
+  padding: 1em 0em 1em 0em;
+  text-align: center;
+  font-size: 1.5em;
 }
 .navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: right;
+	display: inline;
+	padding: 1rem ;
+	text-align: center;
 	text-decoration: none;
-	color: #06080E;
-  font-weight: 700;
-  background-color: #EBF8FF;
-  text-align: center;
-  z-index: 9999;
+    color: black;
 }
 .navigation a:hover {
 	color: white;
-	background-color: #06080E;
+	background-color: black;
 }
+
+
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
   <ul class="navigation responsive">
 */
 .responsive li {
-  display: block;
+    display: block;    
 }
 
-/* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-  }
+header {
+    background-color: #EBF8FF;
+    height: 70px;
+}
+
+
+
   
-ul {
-    grid-column-end: 4;
-    grid-column-start: 1;
-    grid-row: 3;
-  }
-  .navigation {
-    align-content: center;
-    max-width: 760px;
-    float: center;
+.font {
+    font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+    color: #2D3047;
+    font-size: 2ch;
+    padding: 20px;
   }
 
-  .topbox {
+    
+.logo {
+    width: 50px;
+    height: auto;
+    display:block;
+    position: relative;
+    top: 18px;
+    left: 15px;
+  }
+
+  .topTitle {
+      display:block;
+      position: absolute;
+      left:90px;
+      top: 20px;
+      font-size: 1.3em;
+      margin: 0;
+      
+  }
+
+  .topMotto {
+    display:block;
     position: absolute;
-    background-color: #EBF8FF; 
-    height: 129px;
-    width: 100vw;
-    z-index: -1;
-  }
-
-  .logo {
-    left: 60px;
-  }
+    left:90px;
+    font-size: 1.3em;
+    margin: 0;
 }
-
-
-
+  
 .bottombox {
   position: relative;
   background-color: #EBF8FF; 
@@ -109,43 +106,21 @@ ul {
   font-family: 'Harmattan', sans-serif, Arial, Helvetica;
 }
 
+main {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-
+footer {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
  
 .font {
   font-family: 'Harmattan', sans-serif, Arial, Helvetica;
   color: #2D3047;
-  font-size: 2ch;
-  padding: 20px;
-}
-
-  
-.logo {
-  width: 50px;
-  height: auto;
-  grid-column: 1;
-  grid-row: 1;
-  display:inline;
-  position: relative;
-  top: 18px;
-}
-
-.topTitle {
-    color: #06080E;
-    grid-column: 2;
-    grid-row: 1;
-    display:block;
-    position: relative;
-    top: -19px;
-    font-size: large;
-}
-
-.topMotto {
-  color: #06080E;
-  grid-column: 2;
-  grid-row: 1;
-  display:block;
-  font-size: small;
-  
+  padding: 0px;
 }
