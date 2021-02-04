@@ -88,11 +88,31 @@ header {
 .bottombox {
   position: relative;
   background-color: #EBF8FF; 
-  height: 100px;
+  height: 400px;
   border-radius: 10px;
 
 }
 
+.contactInfo {
+  text-align: center;
+  color:#06080E;
+  vertical-align: middle;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+
+.contactTitle {
+  position: inline;
+  text-align: center;
+  color:#06080E;
+  vertical-align: middle;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+
+.map {
+  float: left;
+  position: inline;
+  padding: 15px;
+}
 .footertext {
   padding-top: 25px;
   text-align: center;
