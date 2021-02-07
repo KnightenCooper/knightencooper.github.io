@@ -33,3 +33,12 @@ document.querySelector("#last_modified").innerHTML = weekday + ", " + numberDate
 
 
 // gets current year and stores in year
+
+
+  if (day != 6) {
+     document.getElementById("banner").style.display = "none";
+ }  
+
+  
+
+

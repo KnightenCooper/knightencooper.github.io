@@ -69,9 +69,9 @@ header {
 
   .topTitle {
       display:block;
-      position: absolute;
+      position: relative;
       left:90px;
-      top: 20px;
+      top: -20px;
       font-size: 1.3em;
       margin: 0;
       
@@ -79,7 +79,8 @@ header {
 
   .topMotto {
     display:block;
-    position: absolute;
+    position: relative;
+    top: -30px;
     left:90px;
     font-size: 1.3em;
     margin: 0;
@@ -150,5 +151,25 @@ footer {
   padding: 0px;
 }
 
+.herodiv {margin: 10px auto;position: relative;}
+h1, h2, p {margin: 0;}
 
+.stats {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  border: 15px solid  D;
+  padding: 1.5rem;
+  opacity: .9;
+  background-color: #FFFF;
+}
 
+.banner {
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+  display: block;
+  background-color: #FFFF;
+  border: 15px solid #F8B62D;
+  display: full;
+}
