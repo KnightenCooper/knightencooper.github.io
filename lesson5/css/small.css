@@ -162,6 +162,8 @@ h1, h2, p {margin: 0;}
   padding: 1.5rem;
   opacity: .9;
   background-color: #FFFF;
+  border: 15px solid #F8B62D;
+
 }
 
 .banner {
