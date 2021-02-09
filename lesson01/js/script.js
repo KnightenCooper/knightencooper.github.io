@@ -8,3 +8,10 @@ var year = new Date().getFullYear();
 // sends current year to <span id="year"></span> in footer
 document.querySelector("#year").innerHTML = year;
 
+WebFont.load({
+    google: {
+      families: [
+         'fontfamilynameofyourchoice'
+      ]
+    }
+  });
