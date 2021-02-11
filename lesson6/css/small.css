@@ -156,7 +156,7 @@ h1, h2, p {margin: 0;}
 
 .stats {
   position: absolute;
-  top: 25px;
+  top: 0px;
   right: 50px;
   border: 15px solid  0;
   padding: 1.5rem;
@@ -174,4 +174,10 @@ h1, h2, p {margin: 0;}
   background-color: #FFFF;
   border: 15px solid #F8B62D;
   
+}
+
+.photoA {
+  width: 100%;
+  height: auto;
+
 }

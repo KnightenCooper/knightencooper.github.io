@@ -45,12 +45,18 @@
 
     <main>
       <div class="herodiv">
-        <img class="skyline" src="images/large.jpg" alt="Skyline" />
+        <picture class="photoA">
+          <source media="(max-width:500px)" srcset="images/small2.jpg">
+            <source media="(max-width:700px)" srcset="images/medium2.jpg">
+              <source media="(max-width:700px)" srcset="images/large2.jpg">
+                <img class="photoA" src="images/large2.jpg" alt="Skyline" />
+
+        </picture>
         <section class="stats">
           <h2>Summary</h2>
-          <p>Weather: <span id="gender">Good</span></p>
-          <p>Clouds: <span id="age">None</span></p>
-          <p>Rain: <span id="shots">None</span></p>
+          <p>High: <span id="high">52</span> °F</p>
+          <p>Wind Speed: <span id="windSpeed">12</span> mph</p>
+          <p>Wind Chill: <span id="windChill">2</span> °F</p>
         </section>
       </div>
 
