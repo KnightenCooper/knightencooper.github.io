@@ -46,9 +46,7 @@ document.querySelector("#last_modified").innerHTML = weekday + ", " + numberDate
  var windSpeed = parseFloat(document.getElementById('windSpeed').innerText); // get windspeed from html
  var windChill;
 
- if (high > 50) {
-  windChill = "N/A";
-} else if (windSpeed < 3.0) {
+ if (high > 50 || windSpeed < 3.0) {
   windChill = "N/A";
 } else {
   windChill = 35.74 + (0.6215 * high) - (35.75 * ((Math.pow(windSpeed, 0.16)))) + 0.4275 * high * ((Math.pow(windSpeed, 0.16)));
