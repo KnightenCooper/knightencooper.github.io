@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Preston Local Current Weather</title>
+    <meta
+      name="description"
+      content="Details about the Weather in Preston can be found here."
+    />
+    <link href="../images/favicon(1).ico" rel="shortcut icon" />
+    <link href="css/small.css" rel="stylesheet" type="text/css" />
+    <link href="css/medium.css" rel="stylesheet" type="text/css" />
+    <link href="css/large.css" rel="stylesheet" type="text/css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="images/money.png" alt="money icon" />
+      <h1 class="topTitle font" id="topTitle">Retirement Savings Calculator</h1>
+      <p class="topMotto font">Save & Prepare for the Future</p>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <!-- the three "icon" divs create the hamburger icon button -->
+        <li><a class="ham" href="#"> ☰ </a></li>
+        <li><a class="font" href="https://www.daveramsey.com/">Dave Ramsey</a></li>
+        <li><a class="font" href="https://www.nerdwallet.com/article/finance/how-to-budget">Budgeting Advice</a></li>
+        <li><a class="font" href="https://www.investopedia.com/articles/financial-analysis/090216/7-steps-create-10-year-retirement-plan.asp">Retirement</a></li>
+        <li><a class="font" href="https://money.usnews.com/money/personal-finance/debt/articles/easy-ways-to-pay-off-debt">Pay Debt</a></li>
+        <li><a class="font" href="https://money.usnews.com/banking?int=top_nav_Banking">Banking</a></li>
+        <li><a class="font" href="https://money.usnews.com/money/personal-finance/taxes?int=top_nav_Taxes">Tax Info</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="herodiv">
+
+                <img class="photoA" src="images/plant-money.jpg" alt="money image" />
+
+    
+        <section class="stats">
+          <h2 class="savingsText" >How Much Do You Need to Save Each Month?</h2>
+          <h3 class="savingsText">Current Age: <span id="currentAge"></span> years-old</h3>
+          <h3 class="savingsText">Age at Retirement: <span id="retirementAge"></span> years-old</h3>
+          <h3 class="savingsText">Savings Goal: $<span id="savingsGoal"></span> dollars</h3>
+          <h3 class="savingsText">Monthly Amount to Save: $<span id="monthySavingsGoal"></span> dollars</h3>
+          <h3 class="savingsText">Refresh the page to enter new data.</h3>
+
+        </section>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="bottombox">
+
+        <h1 class="contactTitle">Contact Info</h1>
+        <p class="contactInfo">
+          knighten.cooper@gmail.com | (417) 719 - 3666
+        </p>
+
+        <p class="footertext">
+          © <span id="year"></span> | Knighten Cooper |
+          <a class="footerlink" href="https://www.byui.edu/online"
+            >BYUI Online Learning</a
+          >
+        </p>
+        <p class="yellowfootertext">Date: <span id="last_modified"></span></p>
+      </div>
+    </footer>
+    <!-- The line below this is the web font loader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script src="js/javascript.js"></script>
+  </body>
+</html>

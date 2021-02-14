@@ -1,0 +1,45 @@
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 750px) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+}
+
+/* Media Query for medium+ views */
+@media only screen and (max-width: 920px) {
+	.oranges {
+		display: block;
+		width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.map {
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.skyline {
+		display: block;
+		width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	
+
+
+}
