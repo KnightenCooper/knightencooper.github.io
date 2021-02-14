@@ -13,6 +13,7 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
 
   classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
   */
+
  var year = new Date().getFullYear();
  // sends current year to <span id="year"></span> in footer
  document.querySelector("#year").innerHTML = year;
@@ -33,7 +34,7 @@ document.querySelector("#last_modified").innerHTML = weekday + ", " + numberDate
 
 
 
-
+// The below code gets user input and then uses it to determine monthly amount to save to reach retirement goal savings
 var currentAge = window.prompt("Enter Your Age (don't add years-old, only type the numbers): ");
 var retirementAge = window.prompt("At What Age Do You Want to Retire (don't add years-old, only type the numbers): ");
 var savingsGoal = window.prompt("How Much Money Do You Want to Have Saved For Retirement (don't use '$' or commas, only type numbers): ");
