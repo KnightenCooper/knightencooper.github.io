@@ -1,12 +1,6 @@
-@media only screen and (min-width: 60em) {
-    /* 2 columns and has correct width */ 
+@media only screen and (min-width: 920px) {
 
-    
-    main {
-      grid-template-columns: 1fr 1fr 1fr;
-    } 
-    
-    .title {
-    font-size: 1.7rem;
-    }
+
+
+
 }
