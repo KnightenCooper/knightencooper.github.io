@@ -44,38 +44,52 @@
     </nav>
 
     <main>
-      <div class="herodiv">
-        <picture class="photoA">
-          <source media="(max-width:500px)" srcset="images/small2.jpg">
-            <source media="(max-width:700px)" srcset="images/medium2.jpg">
-              <source media="(max-width:700px)" srcset="images/large2.jpg">
-                <img class="photoA" src="images/large2.jpg" alt="Skyline" />
-
-        </picture>
-        <section class="stats">
-          <h2>Summary</h2>
-          <p>High: <span id="high">42</span> °F</p>
-          <p>Wind Speed: <span id="windSpeed">12</span> mph</p>
-          <p>Wind Chill: <span id="windChill"></span> °F</p>
-        </section>
-      </div>
-
-      <img class="skyline" src="images/5day.jpg" alt="5 day forecast" />
-
-      <img class="oranges" src="images/oranges.jpg" alt="Oranges" />
-
-      <h1 class="font">Article</h1>
-      <p class="font">
-        lfjk sldkfj lsdkfj sldkfj sfkj sldfkj sldkfj sldkfj sldkfj sldkfj sldkfj
-        sldkfjs dlkfj slkjf lsdkfj slkfj sdlkfj sldfkjs ylfjk sldkfj lsdkfj
-        sldkfj sfkj sldfkj sldkfj sldkfj sldkfj sldkfj sldkfj sldkfjs dlkfj
-        slkjf lsdkfj slkfj sdlkfj sldfkjs ylfjk sldkfj lsdkfj sldkfj sfkj sldfkj
-        sldkfj sldkfj sldkfj sldkfj sldkfj sldkfjs dlkfj slkjf lsdkfj slkfj
-        sdlkfj sldfkjs ylfjk sldkfj lsdkfj sldkfj sfkj sldfkj sldkfj sldkfj
-        sldkfj sldkfj sldkfj sldkfjs dlkfj slkjf lsdkfj slkfj sdlkfj sldfkjs y
-        lfjk sldkfj lsdkfj sldkfj sfkj sldfkj sldkfj sldkfj sldkfj sldkfj sldkfj
-        sldkfjs dlkfj slkjf lsdkfj slkfj sdlkfj sldfkjs y
-      </p>
+      <form>
+        <fieldset class="form__fieldset">
+          <div class="form__field">
+            <label for="name" class="form__label">Name: </label>
+            <input 
+              type="text" 
+              id="name" 
+              class="form__input" 
+              name="name" 
+              required
+            >
+          </div>
+    
+          <div class="form__field">
+            <label for="email" class="form__label">Email: </label>
+            <input 
+              type="email" 
+              id="email" 
+              class="form__input" 
+              name="email" 
+              required
+            >
+          </div>
+    
+          <div class="form__field">
+            <label for="shirtsize" class="form__label">T-Shirt Size: </label>
+            <select 
+              id="shirtsize" 
+              class="form__input" 
+              name="shirtsize"
+            >
+              <option value="S">Small</option>
+              <option value="M">Medium</option>
+              <option value="L">Large</option>
+              <option value="XL">XLarge</option>
+            </select>
+          </div>
+    
+          <div class="form__actions">
+            <button type="submit" class="btn btn--primary" id="submit">Proceed to Checkout</button>
+            <div id="feedback" class="form__feedback" aria-live="assertive" role="alert"></div>
+          </div>
+    
+        </fieldset>
+      </form>
+    
     </main>
 
     <footer>
