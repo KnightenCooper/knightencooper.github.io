@@ -8,52 +8,11 @@
   border-radius: 0.375rem;
   box-shadow: 0 15px 45px -5px rgba(10, 16, 34, 0.15);
 }
-  /* &__fieldset {
-    border: 0;
-    padding: 0;
-  }
 
-  &__field {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-    min-height: 2.375rem;
-  }
-
-  &__label {
-    flex: 0 1 25%;
-    text-align: right;
-    margin-right: 1rem;
-  }
-
-  &__input {
-    display: block;
-    flex: 1;
-    padding: 0.5rem;
-  }
-
-  &__actions {
-    padding-top: 0.5rem;
-  }
-
-  &__feedback {
-    margin-top: 1rem;
-    padding: 1rem;
-    border: 2px solid currentColor;
-    border-radius: 0.25rem;
-    color: $blue;
-    background-color: rgba($blue, 0.1);
-
-    &:empty {
-      display: none;
-    }
-    &.success {
-      color: $green;
-      background-color: rgba($green, 0.1);
-    }
-  }
-} */
+.submit-button {
+  color: black;
+  text-decoration: none;
+}
 
 .btn {
   display: inline-block;
@@ -68,20 +27,7 @@
   border-radius: 0.25rem;
   cursor: pointer;
 
-  /* &--primary {
-    display: block;
-    width: 100%;
-    font-weight: 700;
-    background-color: salmon;
-    color: #fff;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
 
-    &:hover,
-    &:focus {
-      background-color: darken(salmon, 10%);
-    } */
   }
 
 
