@@ -1,0 +1,42 @@
+table thead tr {
+  background-color: #7fb9c2;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+tfoot tr {
+  background-color: #7fb9c2;
+  font-size: 15px;
+}
+
+table {
+  font-size: 20px;
+  background-color: lightgray;
+  box-shadow: 10px 10px 10px #628ca6;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+}
+
+th {
+  background-color: #628ca6;
+  color: white;
+  padding: 13px 10px;
+  font-size: 25px;
+}
+
+tr {
+  background-color: #e7ffed;
+}
+
+table tr:nth-of-type(2n) {
+  background-color: #e7f0ed;
+}
+
+td {
+  padding: 13px 20px;
+}
+
+.special-box {
+  background-color: #628ca6;
+  color: white;
+}
