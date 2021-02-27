@@ -55,4 +55,7 @@ document.querySelector("#last_modified").innerHTML = weekday + ", " + numberDate
 
 document.getElementById("windChill").innerText = windChill;
 
+function adjustRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
 

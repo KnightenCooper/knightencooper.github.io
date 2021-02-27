@@ -1,12 +1,4 @@
 /* Form css */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #bbb;
-  line-height: 1.25;
-}
 
 .form {
   width: 320px;

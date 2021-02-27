@@ -47,49 +47,137 @@
       <form>
         <fieldset class="form__fieldset">
           <div class="form__field">
-            <label for="name" class="form__label">Name: </label>
-            <input 
-              type="text" 
-              id="name" 
-              class="form__input" 
-              name="name" 
+            <label for="name" class="form__label">Full Name: </label>
+            <input
+              type="text"
+              id="name"
+              class="form__input"
+              name="name"
               required
-            >
+            />
           </div>
-    
+          <br>
           <div class="form__field">
             <label for="email" class="form__label">Email: </label>
-            <input 
-              type="email" 
-              id="email" 
-              class="form__input" 
-              name="email" 
-              required
-            >
+            <input
+              type="email"
+              id="email"
+              class="form__input"
+              name="email"
+              placeholder="example@mail.com"
+            />
           </div>
-    
+          <br>
           <div class="form__field">
-            <label for="shirtsize" class="form__label">T-Shirt Size: </label>
-            <select 
-              id="shirtsize" 
-              class="form__input" 
-              name="shirtsize"
-            >
-              <option value="S">Small</option>
-              <option value="M">Medium</option>
-              <option value="L">Large</option>
-              <option value="XL">XLarge</option>
+            <label for="telephone" class="form__label">Phone Number: </label>
+            <input
+              type="tel"
+              id="telephone"
+              class="form__input"
+              name="telephone"
+              required
+            />
+          </div>
+          <br>
+          <div class="form__field">
+            <label for="zip-code" class="form__label">Zip Code: </label>
+            <input
+              type="number"
+              id="zip-code"
+              class="form__input"
+              name="zip-code"
+              required
+            />
+          </div>
+          <br>
+          <div class="form__field">
+            <label for="date" class="form__label">Storm Date: </label>
+            <input type="date" id="date" class="form__input" name="date" />
+          </div>
+          <br>
+          <div class="form__field">
+            <label for="storm-type" class="form__label">Storm Type: </label>
+            <select id="storm-type" class="form__input" name="storm-type">
+              <option value="flash-flood">Flash Flood</option>
+              <option value="hail">Hail</option>
+              <option value="hurricane">Hurricane</option>
+              <option value="thunderstorm">Thunderstorm</option>
+              <option value="tornado">Tornado</option>
             </select>
           </div>
-    
+          <br>
+          <label class="flexly" for="severity"
+            >Storm Severity: &nbsp;&nbsp;&nbsp;
+            <input
+              name="severity"
+              type="range"
+              id="severity"
+              value="5"
+              min="1"
+              max="10"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="ratingvalue">5</span>
+          </label>
+          <br>
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+          <br>
+          <label>
+            <select name="storm-region" id="storm-region" onchange="selectResponse()">
+              <option value="" disabled selected>Select Region ...</option>
+              <option value="preston">Preston</option>
+              <option value="soda-springs">Soda Springs</option>
+              <option value="fish-haven">Fish Haven</option>
+            </select></label>
+            <br>
+            <fieldset class="nestedfieldset">
+              <legend>User In-Danger Level <em>(Choose one)</em></legend>
+              <div class="selection">
+                <input type="radio" id="Yes" name="Yes" value="8" checked> <label for="Yes">Yes</label>
+              </div>
+              <div class="selection">
+                <label><input type="radio" name="Maybe" value="9">Maybe</label>
+              </div>
+              <div class="selection">
+                <input type="radio" id="no" name="no" value="10">
+                <label for="no">No</label>
+              </div>
+              </fieldset>
+              <br>
+              <label for="comments">Additional Information or Comments:</label>
+            <br>
+              <textarea id="comments" name="comments" rows="4" cols="50">
+              
+              </textarea>
+
           <div class="form__actions">
-            <button type="submit" class="btn btn--primary" id="submit">Proceed to Checkout</button>
-            <div id="feedback" class="form__feedback" aria-live="assertive" role="alert"></div>
+            <button type="submit" class="btn btn--primary" id="submit">
+              Submit
+            </button>
+            <div
+              id="feedback"
+              class="form__feedback"
+              aria-live="assertive"
+              role="alert"
+            ></div>
           </div>
-    
         </fieldset>
       </form>
-    
     </main>
 
     <footer>
