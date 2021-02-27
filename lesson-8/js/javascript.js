@@ -61,3 +61,4 @@ function adjustRating(rating) {
 
 document.getElementById("feedback").onclick = function () {
   location.href = "www.youtube.com";
+}
