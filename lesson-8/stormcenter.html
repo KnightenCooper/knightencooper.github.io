@@ -46,6 +46,7 @@
     <main>
       <form>
         <fieldset class="form__fieldset">
+          <fieldset class="nestedfieldset">
           <div class="form__field">
             <label for="name" class="form__label">Full Name: </label>
             <input
@@ -56,7 +57,9 @@
               required
             />
           </div>
+           </fieldset>
           <br>
+          <fieldset class="nestedfieldset"> 
           <div class="form__field">
             <label for="email" class="form__label">Email: </label>
             <input
@@ -67,7 +70,9 @@
               placeholder="example@mail.com"
             />
           </div>
+           </fieldset>
           <br>
+          <fieldset class="nestedfieldset">
           <div class="form__field">
             <label for="telephone" class="form__label">Phone Number: </label>
             <input
@@ -78,7 +83,9 @@
               required
             />
           </div>
+           </fieldset>
           <br>
+          <fieldset class="nestedfieldset">
           <div class="form__field">
             <label for="zip-code" class="form__label">Zip Code: </label>
             <input
@@ -89,12 +96,16 @@
               required
             />
           </div>
+          </fieldset>
           <br>
+          <fieldset class="nestedfieldset">
           <div class="form__field">
             <label for="date" class="form__label">Storm Date: </label>
             <input type="date" id="date" class="form__input" name="date" />
           </div>
+        </fieldset>
           <br>
+          <fieldset class="nestedfieldset">
           <div class="form__field">
             <label for="storm-type" class="form__label">Storm Type: </label>
             <select id="storm-type" class="form__input" name="storm-type">
@@ -105,7 +116,9 @@
               <option value="tornado">Tornado</option>
             </select>
           </div>
+        </fieldset>
           <br>
+          <fieldset class="nestedfieldset">
           <label class="flexly" for="severity"
             >Storm Severity: &nbsp;&nbsp;&nbsp;
             <input
@@ -123,6 +136,7 @@
             <span id="ratingvalue">5</span>
           </label>
           <br>
+          
           <datalist id="tickmarks">
             <option value="0"></option>
             <option value="1"></option>
@@ -136,7 +150,9 @@
             <option value="9"></option>
             <option value="10"></option>
           </datalist>
+          </fieldset>
           <br>
+          <fieldset class="nestedfieldset">
           <label>
             <select name="storm-region" id="storm-region" >
               <option value="" disabled selected>Select Region ...</option>
@@ -144,6 +160,7 @@
               <option value="soda-springs">Soda Springs</option>
               <option value="fish-haven">Fish Haven</option>
             </select></label>
+          </fieldset>
             <br>
 
             <fieldset class="nestedfieldset">
@@ -160,11 +177,16 @@
               </div>
               </fieldset>
               <br>
+              <fieldset class="nestedfieldset">
               <label for="comments">Additional Information or Comments:</label>
             <br>
               <textarea id="comments" name="comments" rows="4" cols="50">
               
               </textarea>
+
+              
+               </fieldset>
+               <br>
 
           <div class="form__actions">
             <button type="submit" class="btnprimary" id="submit">
@@ -178,7 +200,7 @@
             ></div>
           </div>
         </fieldset>
-
+<br>
       </form>
 
 
