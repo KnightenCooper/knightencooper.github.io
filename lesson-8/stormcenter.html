@@ -44,7 +44,7 @@
     </nav>
 
     <main>
-      <form>
+      <form method="GET" action="thanks.html">
         <fieldset class="form__fieldset">
           <fieldset class="nestedfieldset">
           <div class="form__field">
@@ -55,6 +55,7 @@
               class="form__input"
               name="name"
               required
+              pattern="[a-zA-Z\s]{5,}"
             />
           </div>
            </fieldset>
@@ -189,8 +190,8 @@
                <br>
 
           <div class="form__actions">
-            <button type="submit" class="btnprimary" id="submit">
-              <a class="submit-button" href="https://knightencooper.github.io/lesson-8/thanks.html"> Submit</a>
+            <button type="submit" class="btnprimary" id="submit"> Submit
+              
             </button>
             <div
               id="feedback"
