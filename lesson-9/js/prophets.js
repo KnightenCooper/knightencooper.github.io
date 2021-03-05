@@ -29,8 +29,8 @@ fetch(requestURL)
       );
 
       card.appendChild(h2);
+      card.appendChild(h3);
       card.appendChild(h4);
-      card.appendChild(h5);
       card.appendChild(img);
 
       document.querySelector("div.prophet-cards").appendChild(card);
