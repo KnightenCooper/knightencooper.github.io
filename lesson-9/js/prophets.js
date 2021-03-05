@@ -11,7 +11,7 @@ fetch(requestURL)
     for (let i = 0; i < prophets.length; i++) {
       let card = document.createElement("section");
       let h2 = document.createElement("h2");
-      let h4 = document.createElement("h4");
+      let h4 = document.createElement("h3");
       let h5 = document.createElement("h4");
       let img = document.createElement("img");
 
