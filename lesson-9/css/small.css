@@ -1,0 +1,13 @@
+
+    /* 2 columns and has correct width */ 
+        main {
+            display: block; 
+        } 
+    
+        .title {
+            font-size: 0.9rem;
+            }
+    
+            img {
+                display: block;
+            }
