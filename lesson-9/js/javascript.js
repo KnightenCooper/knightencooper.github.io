@@ -43,14 +43,14 @@ fetch(requestURL)
         for (let i = 0; i < townsA.length; i++) {
             let information = document.createElement('section');
             let h2 = document.createElement('h2');
-            let h4 = document.createElement('h3');
+            let h3 = document.createElement('h3');
             let h3_1 = document.createElement('h4');
             let h3_2 = document.createElement('h4');
             let h3_3 = document.createElement('h4');
             let img = document.createElement('img');
 
             h2.textContent = towns[townsA[i]].name;
-            h4.textContent = '"' + towns[townsA[i]].motto + '"';
+            h3.textContent = '"' + towns[townsA[i]].motto + '"';
             h3_1.textContent = 'Year Founded: ' + towns[townsA[i]].yearFounded;
             h3_2.textContent = 'Population: ' + towns[townsA[i]].currentPopulation;
             h3_3.textContent = 'Annual Rainfall: ' + towns[townsA[i]].averageRainfall + '"';
@@ -58,7 +58,7 @@ fetch(requestURL)
             img.setAttribute('alt', towns[townsA[i]].name + 'photo');
 
             information.appendChild(h2);
-            information.appendChild(h4);
+            information.appendChild(h3);
             information.appendChild(h3_1);
             information.appendChild(h3_2);
             information.appendChild(h3_3);
