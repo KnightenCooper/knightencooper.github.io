@@ -10,13 +10,13 @@ fetch(requestURL)
     console.table(jsonObject);
     for (let i = 0; i < prophets.length; i++) {
       let card = document.createElement("section");
-      let h2 = document.createElement("h2 ");
-      let h4 = document.createElement("h3");
-      let h5 = document.createElement("h4");
+      let h2 = document.createElement("h2");
+      let h3 = document.createElement("h3");
+      let h4 = document.createElement("h4");
       let img = document.createElement("img");
 
       h2.textContent = prophets[i].name + " " + prophets[i].lastname;
-      h4.textContent = "Birthday: " + prophets[i].birthdate;
+      h4.textContent = "Date of Birth: " + prophets[i].birthdate;
       h5.textContent = "Place of Birth: " + prophets[i].birthplace;
       img.setAttribute("src", prophets[i].imageurl);
       img.setAttribute(
@@ -29,8 +29,8 @@ fetch(requestURL)
       );
 
       card.appendChild(h2);
+      card.appendChild(h3);
       card.appendChild(h4);
-      card.appendChild(h5);
       card.appendChild(img);
 
       document.querySelector("div.prophet-cards").appendChild(card);
