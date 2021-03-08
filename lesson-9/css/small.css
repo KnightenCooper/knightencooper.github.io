@@ -10,8 +10,12 @@
     
             img {
                 display: block;
+                
             }
 
+.top_image {
+    width: 100%;
+}
 
 
 
@@ -31,8 +35,20 @@
 
 
 
+            h2 {text-align:center;}
 
-
+            section {
+                max-width: 600px;
+              margin: .5rem auto;
+                border:1px solid #bbb;
+              background-color: #eee;
+            }
+            
+            article {
+              display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            
 
 
 
