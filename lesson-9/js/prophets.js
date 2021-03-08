@@ -16,8 +16,8 @@ fetch(requestURL)
       let img = document.createElement("img");
 
       h2.textContent = prophets[i].name + " " + prophets[i].lastname;
-      h4.textContent = "Date of Birth: " + prophets[i].birthdate;
-      h5.textContent = "Place of Birth: " + prophets[i].birthplace;
+      h3.textContent = "Day of Birth: " + prophets[i].birthdate;
+      h4.textContent = "Location of Birth: " + prophets[i].birthplace;
       img.setAttribute("src", prophets[i].imageurl);
       img.setAttribute(
         "alt",
