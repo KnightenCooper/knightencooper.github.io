@@ -48,10 +48,14 @@
         <img class="photoA" src="images/large2.jpg" alt="Skyline" />
       </picture>
       <section class="stats">
-        <h2>Summary</h2>
-        <p>High: <span id="high">42</span> °F</p>
+        <h2>Weather Summary</h2>
+        <p>High: <span id="high"></span> °F</p>
         <p>Wind Speed: <span id="windSpeed">12</span> mph</p>
         <p>Wind Chill: <span id="windChill"></span> °F</p>
+        <p>Humidity: <span id="humidity"></span> %</p>        
+        <p>Currently: <span id="currently"></span></p>
+       
+
       </section>
     </div>
     <table>
@@ -61,19 +65,20 @@
 
       <tbody>
         <tr>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
+          <th id="weekday-1"></th>
+          <th id="weekday-2"></th>
+          <th id="weekday-3"></th>
+          <th id="weekday-4"></th>
+          <th id="weekday-5"></th>
         </tr>
         <tr>
-          <td>August</td>
-          <td>$3,590</td>
-          <td>$4,000</td>
-          <td>$3,590</td>
-          <td>$4,000</td>
+          <td id="day-1"></td>
+          <td id="day-2"></td>
+          <td id="day-3"></td>
+          <td id="day-4"></td>
+          <td id="day-5"></td>
         </tr>
+
         <tr>
           <td>September</td>
           <td>$4,420</td>
@@ -126,7 +131,9 @@
   <!-- The line below this is the web font loader -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
-  <script src="js/javascript.js"></script>
+  <script src="js/weatherapi.js"></script>
+  <script src="js/javascript.js"></script>  
+
 </body>
 
 </html>
