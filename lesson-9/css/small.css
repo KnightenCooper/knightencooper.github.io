@@ -61,3 +61,8 @@ h4 {
 .towns img {
     box-shadow: 0 5px 15px gray;
     }
+
+    .important {
+        color: red;
+      
+    }
