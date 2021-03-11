@@ -55,8 +55,13 @@ var sumString = String(sum);
 number = "day-" + sumString;
 
 var html = jsObjectForecast.list[i].main.temp + " °F"
+document.getElementById(number).innerText = html;
 
-document.getElementById(number).innerText = html; 
+// Somehow use the code below to add icons to 5-day forecast
+// var images = 'https://openweathermap.org/img/w/' + jsObject.weather[i].icon + '.png';  // get icon
+// image = "image-" + sumString;
+// document.getElementById(image).innerText = images;
+
 }
 }
 

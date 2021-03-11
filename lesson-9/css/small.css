@@ -7,78 +7,57 @@
         .title {
             font-size: 0.9rem;
             }
-    
-            img {
-                display: block;
-                
-            }
+           
 
-.top_image {
-    width: 100%;
+                .top_image {
+                    
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin: 10px auto;
+                        position: relative;
+                        width: 100%;
+                        height: auto;
+                }
+
+                @media only screen and (max-width: 500px) and (min-width: 0px) {
+                article img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin: 10px auto;
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    }
+                }
+
+
+
+           section {
+               max-width: 600px;
+             margin: .5rem auto;
+               border:1px solid #bbb;
+             background-color: #eee;
+             padding: 10px;
+           }
+article {
+    background-color: bisque;
+}
+article h2{
+    padding: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            h2 {text-align:center;}
-
-            section {
-                max-width: 600px;
-              margin: .5rem auto;
-                border:1px solid #bbb;
-              background-color: #eee;
-            }
-            
-            article {
-              display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-            
-
-
-
-
-
-
-            
-.town-data {
-    background-color: white;
-    padding: 15px;
+h2 {
+    text-align: center;
 }
-
-.towns {
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: 1fr;
+h3 {
+    text-align: center;
+}
+h4 {
     text-align: center;
 }
 
-.towns section {
-    background-color: lightgrey;
-    padding: 0px;
-    box-shadow: 0 5px 25px gray;
-}
-
 .towns img {
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 5px 25px gray;
-}
-
-
-
+    box-shadow: 0 5px 15px gray;
+    }

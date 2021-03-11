@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 1000px)  {
     /* 2 columns and has correct width */ 
 
     
@@ -9,4 +9,18 @@
     .title {
     font-size: 1.7rem;
     }
+    article {
+      display: grid;
+        grid-template-columns: 1fr ;
+        background-color: bisque;
+    }
+    .towns {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: 1fr 1fr 11fr;
+      text-align: center;
+      }
+     article img {
+       width: 290px;
+     }
 }
