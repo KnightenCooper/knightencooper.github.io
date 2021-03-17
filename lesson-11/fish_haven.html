@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Preston Local Current Weather</title>
+    <meta
+      name="description"
+      content="Details about the Weather in Preston can be found here."
+    />
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <link href="css/small.css" rel="stylesheet" type="text/css" />
+    <link href="css/medium.css" rel="stylesheet" type="text/css" />
+    <link href="css/large.css" rel="stylesheet" type="text/css" />
+    <link href="css/tablebuild.css" rel="stylesheet" type="text/css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="banner" id="banner">
+      <h1>Friday = Preston Pancakes in the Park!</h1>
+      <h1>9:00 a.m. Friday at the Park.</h1>
+    </div>
+    <header>
+      <img class="logo" src="images/icon.png" alt="Weather Logo Icon" />
+      <h1 class="topTitle font" id="topTitle">Local Weather Updates</h1>
+      <p class="topMotto font">100% Accurate Reporting</p>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <!-- the three "icon" divs create the hamburger icon button -->
+        <li><a class="ham" href="#"> ☰ </a></li>
+        <li><a class="font" href="https://knightencooper.github.io/lesson-11/index.html">Home</a></li>
+        <li><a class="font" href="https://knightencooper.github.io/lesson-11/preston.html">Preston</a></li>
+        <li><a class="font" href="https://knightencooper.github.io/lesson-11/soda_springs.html">Soda Springs</a></li>
+        <li><a class="currentPage" href="https://knightencooper.github.io/lesson-11/fish_haven.html">Fish Haven</a></li>
+        <li><a class="font" href="https://knightencooper.github.io/lesson-11/storm_center.html">Storm Center</a></li>
+        <li><a class="font" href="https://knightencooper.github.io/lesson-11/gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="herodiv">
+        <picture class="photoA">
+          <source media="(max-width:500px)" srcset="images/small2.jpg" />
+          <source media="(max-width:700px)" srcset="images/medium2.jpg" />
+          <source media="(max-width:700px)" srcset="images/large2.jpg" />
+          <img class="photoA" src="images/large2.jpg" alt="Skyline" />
+        </picture>
+        <section class="stats">
+          <h2>Weather Summary</h2>
+          <p>High: <span id="high"></span> °F</p>
+          <p>Wind Speed: <span id="windSpeed">12</span> mph</p>
+          <p>Wind Chill: <span id="windChill"></span> °F</p>
+          <p>Humidity: <span id="humidity"></span> %</p>
+          <p>Currently: <span id="currently"></span></p>
+        </section>
+      </div>
+      <table class="five-day-table">
+        <thead>
+          <caption>
+            5-Day Forecast
+          </caption>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th id="weekday-1"></th>
+            <th id="weekday-2"></th>
+            <th id="weekday-3"></th>
+            <th id="weekday-4"></th>
+            <th id="weekday-5"></th>
+          </tr>
+          <tr>
+            <td id="day-1"></td>
+            <td id="day-2"></td>
+            <td id="day-3"></td>
+            <td id="day-4"></td>
+            <td id="day-5"></td>
+          </tr>
+
+          <tr>
+            <td><img id="image-1" /></td>
+            <td><img id="image-2" /></td>
+            <td><img id="image-3" /></td>
+            <td><img id="image-4" /></td>
+            <td><img id="image-5" /></td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <td colspan="5">All Data Provided by OpenWeatherMap</td>
+        </tfoot>
+      </table>
+
+      <img class="oranges" src="images/oranges.jpg" alt="Oranges" />
+
+      <h1 class="font">Weather Ruins Orange Crop</h1>
+      <p class="font">
+        The recent weather patterns have devastated orange farmers in Preston.
+        The unique combination of cold winds and rain means that the orange crop
+        will be lower than unsual. Many farmers are worried that they might go
+        out of business and have to sell their farms due to the weather ruining
+        their oranges. The prices of oranges in the local Preston community are
+        expected to skyrocket.
+      </p>
+    </main>
+
+    <footer>
+      <div class="bottombox">
+        <img class="map" src="images/map.jpg" alt="Map" />
+
+        <h1 class="contactTitle">Contact Info</h1>
+        <p class="contactInfo">Author: Knighten Cooper</p>
+        <p class="contactInfo">E-mail: knighten.cooper@gmail.com</p>
+        <p class="yellowfootertext">Date: <span id="last_modified"></span></p>
+        <p class="contactInfo">Copyright: © <span id="year"></span></p>
+
+        <p class="footertext">
+          <a class="footerlink" href="https://openweathermap.org/"
+            >Data from OpenWeatherMap</a
+          >
+          |
+          <a
+            class="footerlink"
+            href="https://www.termsfeed.com/live/f1f020a4-ab70-4777-b579-bdb7ec8aaaf1"
+            >Terms of Use</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- The line below this is the web font loader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
