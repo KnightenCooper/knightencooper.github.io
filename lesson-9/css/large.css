@@ -6,9 +6,9 @@
       grid-template-columns: 1fr 1fr 1fr;
     } 
     
-    .title {
+    /* .title {
     font-size: 1.7rem;
-    }
+    } */
     article {
       display: grid;
         grid-template-columns: 1fr ;

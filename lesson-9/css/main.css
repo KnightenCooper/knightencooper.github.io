@@ -1,5 +1,5 @@
 /* smallest sized screen */ 
-.title{
+/* .title{
     margin: 0;
     line-height: 100px;
     text-align: center;
@@ -8,7 +8,7 @@
     font-family: 'Uncial Antiqua', cursive, Arial, Helvetica, sans-serif;
     letter-spacing: 5px;
     font-size: 1rem;
-  }
+  } */
 
 main {
     display: grid;
