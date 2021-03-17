@@ -1,0 +1,14 @@
+@media only screen and (min-width: 920px) and (max-width: 9000000px) {
+
+    .map {
+        float: left;
+        padding: 15px;
+      }
+
+      .bottombox { 
+		height: 255px;
+	  }
+
+      
+}
+
