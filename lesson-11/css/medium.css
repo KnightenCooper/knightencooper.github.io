@@ -21,7 +21,7 @@
 @media only screen and (min-width: 610px) and (max-width: 920px) {
 	.oranges {
 		display: block;
-		width: 320px;
+		width: 500px;
 		margin-left: auto;
 		margin-right: auto;
 	}
