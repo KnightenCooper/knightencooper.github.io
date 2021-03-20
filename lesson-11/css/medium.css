@@ -26,8 +26,13 @@
 		margin-right: auto;
 	}
 
+	.social_icons {
+		padding-left: 320px;
+		text-align: center;
+	  }
+
 	.bottombox { 
-		height: 230px;
+		height: 250px;
 	  }
 	.map {
 		width: 300px;

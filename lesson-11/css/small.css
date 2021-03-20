@@ -4,6 +4,10 @@
 }
 
 }
+.social_icons {
+  text-align: center;
+}
+
 .oranges {
   display: block;
   padding-top: 10px;;
@@ -106,7 +110,7 @@ caption {
 .bottombox {
   position: relative;
   background-color: #EBF8FF; 
-  height: 400px;
+  height: 430px;
   border-radius: 10px;
 
 }
@@ -126,7 +130,11 @@ caption {
   font-family: 'Harmattan', sans-serif, Arial, Helvetica;
 }
 @media only screen and (min-width: 0px) and (max-width: 610px) {
-.map {
+
+
+
+
+  .map {
   display: block;
   margin-left: auto;
   margin-right: auto;
