@@ -2,11 +2,13 @@
 
     .map {
         float: left;
-        padding: 15px;
+        padding: 10px;
+        height: 300px;
+        padding-left: 90px;;
       }
 
       .bottombox { 
-		height: 255px;
+		height: 325px;
 	  }
 
       .oranges {
