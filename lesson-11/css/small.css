@@ -1,4 +1,4 @@
-@media only screen and (max-width: 800px) and (min-width: 0px)  {
+@media only screen and (max-width: 940px) and (min-width: 0px)  {
 .five-day-table{
   display: none;
 }
@@ -92,26 +92,32 @@ p {
     display:block;
     position: relative;
     top: 18px;
-    left: 15px;
+    
+    padding-right: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
 
   .topTitle {
       display:block;
       position: relative;
-      left:90px;
+      /* left:90px; */
       top: -20px;
       font-size: 1.3em;
       margin: 0;
-      
+      text-align: center;
   }
 
   .topMotto {
     display:block;
     position: relative;
     top: -30px;
-    left:90px;
+    /* left:90px; */
     font-size: 1.3em;
     margin: 0;
+    text-align: center;
+
 }
   
 .bottombox {

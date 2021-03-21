@@ -11,6 +11,7 @@ tfoot tr {
 }
 
 table {
+  width: 900px;
   font-size: 20px;
   background-color: white;
 
