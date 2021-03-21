@@ -52,25 +52,17 @@ fetch(requestURL)
 .then(function (response) {
   return response.json();
 })
-.then(function (jsonObject) {
-   // temporary checking for valid response and data parsing
-  const townData = jsonObject['towns'];
-  const townName = document.getElementById('town-name').innerHTML;
-  const townFilter = townData.filter(x => x.name == townName);
-  const eventList = townFilter[0].events;
-  let events = document.createElement('section');
+    .then(function(jsonObject) {
+      console.table(jsonObject);
+      const towns = jsonObject['towns'];
+      const townNumber = [0];
 
-  for (let j = 0; j<eventList.length; j++){
-      let p = document.createElement('p');
-      p.textContent = eventList[j];
-      events.appendChild(p);
-    }
+   let card = document.createElement('section');
 
-    document.querySelector('div.events').appendChild(events);
-  
-});
+      for (let i = 0; i<towns.length; i++){
+        let p = document.createElement('p');
+        p.textContent = towns[townNumber].events[i];
+        card.appendChild(p);}
 
-
-
-
-
+      document.querySelector('div.events').appendChild(card);
+    });

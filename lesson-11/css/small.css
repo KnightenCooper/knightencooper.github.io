@@ -74,6 +74,8 @@ caption {
 } 
 p {
   font-size: x-large;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+    color: #2D3047;
 }
   
 .font {
