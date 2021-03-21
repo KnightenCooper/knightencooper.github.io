@@ -27,17 +27,17 @@
 	}
 
 	.social_icons {
-		padding-left: 320px;
+		padding-left: 200px;
 		text-align: center;
 	  }
 
 	.bottombox { 
-		height: 230px;
+		height: 320px;
 	  }
 	.map {
-		width: 300px;
+		width: 165px;
 			float: left;
-			padding: 15px;
+			padding: 20px;
 			padding-top: 30px;
 		  }
 	}
