@@ -39,7 +39,7 @@ fetch(requestURL)
   .then(function(jsonObject) {
       console.table(jsonObject);
       const towns = jsonObject['towns'];
-      var town_numbers = [6, 5, 1]
+      var town_numbers = [6, 2, 0]
       for (let i = 0; i < town_numbers.length; i++) {
           let information = document.createElement('article');
           let name = document.createElement('h2');
