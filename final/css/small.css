@@ -1,0 +1,301 @@
+@media only screen and (max-width: 940px) and (min-width: 0px)  {
+.five-day-table{
+  display: none;
+}
+
+}
+
+.join {
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+  color: #2D3047;
+  font-size: x-large;  
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+.join_section a:hover {
+	color: white;
+	background-color: #1F2839;
+}
+
+
+.three {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  font-family:  sans-serif, Arial;
+}
+
+.ad {
+  background-color: #F5F5EF;
+  border: 15px solid #B69D74;
+
+}
+
+.social_icons {
+  text-align: center;
+}
+
+.oranges {
+  display: block;
+  padding-top: 10px;;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+/* Small/Phone View ***************/
+caption {
+  background-color: #1F2839;
+  font-weight: bold;
+  font-size: 35px;
+}
+.navigation {
+	list-style: none;
+	padding: 0em;
+  background-color: #FFFF;
+  border: 15px solid #B69D74;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+  display: none;
+  padding: 1em 0em 1em 0em;
+  text-align: center;
+  font-size: 1.5em;
+}
+.navigation a {
+	display: inline;
+	padding: 1rem ;
+	text-align: center;
+	text-decoration: none;
+
+}
+.navigation a:hover {
+	color: white;
+	background-color: #1F2839;
+}
+
+.currentPage {
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+  font-size: 2ch;
+  padding: 20px;
+  color: white;
+	background-color: #1F2839;
+} 
+
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+    display: block;    
+}
+
+ header {
+    background-color: #F5F5EF;
+    height: 70px;
+} 
+p {
+  font-size: medium;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+    color: #2D3047;
+}
+  
+.font {
+    font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+    color: #2D3047;
+    font-size: x-large;
+    padding: 20px;
+  }
+
+    
+.logo {
+    width: 50px;
+    height: auto;
+    display:block;
+    position: relative;
+    top: 18px;
+    
+    padding-right: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .topTitle {
+      display:block;
+      position: relative;
+      /* left:90px; */
+      top: -20px;
+      font-size: 1.3em;
+      margin: 0;
+      text-align: center;
+  }
+
+  .topMotto {
+    display:block;
+    position: relative;
+    top: -30px;
+    /* left:90px; */
+    font-size: 1.3em;
+    margin: 0;
+    text-align: center;
+
+}
+  
+.bottombox {
+  position: relative;
+  background-color: #F5F5EF; 
+  height: 450px;
+  border-radius: 10px;
+
+}
+
+.contactInfo {
+  text-align: center;
+  color:#06080E;
+  vertical-align: middle;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+
+.contactTitle {
+
+  text-align: center;
+  color:#06080E;
+  vertical-align: middle;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+@media only screen and (min-width: 0px) and (max-width: 610px) {
+
+.bottombox{
+  height: 720px;
+}
+
+
+  .map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 15px;
+}
+}
+
+.footertext {
+  padding-top: 25px;
+  text-align: center;
+  color:#06080E;
+  vertical-align: middle;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+.footerlink {
+  color: #06080E;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+.yellowfootertext {
+  text-align: center;
+  color: #06080E;
+  vertical-align: middle;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ 
+.font {
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+  color: #2D3047;
+  padding: 0px;
+}
+
+.herodiv {margin: 10px auto;position: relative;}
+h1, h2, p {margin: 0;}
+
+.stats {
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  border: 15px solid  0;
+  padding: 1.5rem;
+  opacity: .9;
+  background-color: #FFFF;
+  border: 15px solid #B69D74;
+  font-family: 'Harmattan', sans-serif, Arial, Helvetica;
+}
+
+.banner {
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+  display: block;
+  background-color: #FFFF;
+  border: 15px solid #B69D74;
+  
+}
+
+.photoA {
+  width: 100%;
+  height: auto;
+}
+
+
+/* CSS for the Gallery Page */
+.gallery-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  font-family: 'Roboto', sans-serif, Arial;
+}
+
+.galleryimage {
+  width: 95%;
+  height: auto;
+  border: 5px solid #B69D74;
+  margin: 5px;
+}
+
+.gallery-image {
+    width: 300px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-image:hover {
+box-shadow: 10px 15px 15px #B69D74;
+}
+
+@media only screen and (max-width: 950px) {
+  .gallery-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .gallery-image:hover {
+      box-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .gallery-main {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  .gallery-image:hover {
+      box-shadow: none;
+  }
+}

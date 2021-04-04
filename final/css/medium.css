@@ -1,0 +1,54 @@
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 750px) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 610px) and (max-width: 920px) {
+	.oranges {
+		display: block;
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.social_icons {
+		padding-left: 200px;
+		text-align: center;
+	  }
+
+	.bottombox { 
+		height: 350px;
+	  }
+	.map {
+		width: 255px;
+			float: left;
+			padding: 10px;
+			padding-top: 30px;
+		  }
+	}
+	.skyline {
+		display: block;
+		width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	
+	
+
+

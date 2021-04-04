@@ -1,0 +1,20 @@
+@media only screen and (min-width: 920px) and (max-width: 9000000px) {
+
+    .map {
+        float: left;
+        padding: 10px;
+        height: 330px;
+        padding-left: 300px;;
+      }
+
+      .bottombox { 
+		height: 350px;
+	  }
+
+      .oranges {
+        width: 500px;
+      }
+      
+      
+}
+

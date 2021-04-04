@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Storm Center</title>
+    <meta
+      name="description"
+      content="Users can submit storm information here"
+    />
+    <link href="../lesson5/images/favicon.ico" rel="shortcut icon" />
+    <link href="css/small.css" rel="stylesheet" type="text/css" />
+    <link href="css/medium.css" rel="stylesheet" type="text/css" />
+    <link href="css/large.css" rel="stylesheet" type="text/css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="banner" id="banner">
+      <h1>Friday = Preston Pancakes in the Park!</h1>
+      <h1>9:00 a.m. Friday at the Park.</h1>
+    </div>
+    <header>
+      <img class="logo" src="images/icon.png" alt="Weather Logo Icon" />
+      <h1 class="topTitle font" id="topTitle">Local Weather Updates</h1>
+      <p class="topMotto font">100% Accurate Reporting</p>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <!-- the three "icon" divs create the hamburger icon button -->
+        <li><a class="ham" href="#"> ☰ </a></li>
+        <li><a class="font" href="https://knightencooper.github.io/lesson-11/index.html">Home</a></li>
+        <li><a class="font" href="https://knightencooper.github.io/lesson-11/preston.html">Preston</a></li>
+        <li><a class="font" href="https://knightencooper.github.io/lesson-11/soda_springs.html">Soda Springs</a></li>
+        <li><a class="font" href="https://knightencooper.github.io/lesson-11/fish_haven.html">Fish Haven</a></li>
+        <li><a class="currentPage" href="https://knightencooper.github.io/lesson-11/storm_center.html">Storm Center</a></li>
+        <li><a class="font" href="https://knightencooper.github.io/lesson-11/gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form method="GET" action="thanks.html">
+        <fieldset class="form__fieldset">
+          <fieldset class="nestedfieldset">
+            <legend>Name</legend>
+          <div class="form__field">
+            <label for="name" class="form__label">Full Name: </label>
+            <input
+              type="text"
+              id="name"
+              class="form__input"
+              name="name"
+              required
+              pattern="[a-zA-Z\s]{5,}"
+            />
+          </div>
+           </fieldset>
+          <br>
+          <fieldset class="nestedfieldset"> 
+            <legend>Email</legend>
+          <div class="form__field">
+            <label for="email" class="form__label">Email: </label>
+            <input
+              type="email"
+              id="email"
+              class="form__input"
+              name="email"
+              placeholder="example@mail.com"
+            />
+          </div>
+           </fieldset>
+          <br>
+          <fieldset class="nestedfieldset">
+            <legend>Phone Number</legend>
+          <div class="form__field">
+            <label for="telephone" class="form__label">Phone Number: </label>
+            <input
+              type="tel"
+              id="telephone"
+              class="form__input"
+              name="telephone"
+              required
+            />
+          </div>
+           </fieldset>
+          <br>
+          <fieldset class="nestedfieldset">
+            <legend>Zip Code</legend>
+          <div class="form__field">
+            <label for="zip-code" class="form__label">Zip Code: </label>
+            <input
+              type="number"
+              id="zip-code"
+              class="form__input"
+              name="zip-code"
+              required
+            />
+          </div>
+          </fieldset>
+          <br>
+          <fieldset class="nestedfieldset">
+            <legend>Storm Date</legend>
+          <div class="form__field">
+            <label for="date" class="form__label">Storm Date: </label>
+            <input type="date" id="date" class="form__input" name="date" />
+          </div>
+        </fieldset>
+          <br>
+          <fieldset class="nestedfieldset">
+            <legend>Storm Type</legend>
+          <div class="form__field">
+            <label for="storm-type" class="form__label">Storm Type: </label>
+            <select id="storm-type" class="form__input" name="storm-type">
+              <option value="flash-flood">Flash Flood</option>
+              <option value="hail">Hail</option>
+              <option value="hurricane">Hurricane</option>
+              <option value="thunderstorm">Thunderstorm</option>
+              <option value="tornado">Tornado</option>
+            </select>
+          </div>
+        </fieldset>
+          <br>
+          <fieldset class="nestedfieldset">
+            <legend>Storm Severity</legend>
+          <label class="flexly" for="severity"
+            >Storm Severity: &nbsp;&nbsp;&nbsp;
+            <input
+              name="severity"
+              type="range"
+              id="severity"
+              value="5"
+              min="1"
+              max="10"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="ratingvalue">5</span>
+          </label>
+          <br>
+          
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+          </fieldset>
+          <br>
+          <fieldset class="nestedfieldset">
+            <legend>Storm Region</legend>
+          <label>
+            <select name="storm-region" id="storm-region" >
+              <option value="" disabled selected>Select Region ...</option>
+              <option value="preston">Preston</option>
+              <option value="soda-springs">Soda Springs</option>
+              <option value="fish-haven">Fish Haven</option>
+            </select></label>
+          </fieldset>
+            <br>
+
+            <fieldset class="nestedfieldset">
+              <legend>User In-Danger Level <em>(Choose one)</em></legend>
+              <div class="selection">
+                <input type="radio" id="Yes" name="answer" > <label for="Yes">Yes</label>
+              </div>
+              <div class="selection">
+                <label><input type="radio" name="answer" >Maybe</label>
+              </div>
+              <div class="selection">
+                <input type="radio" id="no" name="answer" >
+                <label for="no">No</label>
+              </div>
+              </fieldset>
+              <br>
+              <fieldset class="nestedfieldset">
+                <legend>Comments</legend>
+              <label for="comments">Additional Information or Comments:</label>
+            <br>
+              <textarea id="comments" name="comments" rows="4" cols="50">
+              
+              </textarea>
+
+              
+               </fieldset>
+               <br>
+
+          <div class="form__actions">
+            <button type="submit" class="btnprimary" id="submit"> Submit
+              
+            </button>
+            <div
+              id="feedback"
+              class="form__feedback"
+              aria-live="assertive"
+              role="alert"
+            ></div>
+          </div>
+        </fieldset>
+<br>
+      </form>
+
+
+
+    </main>
+
+    <footer>
+      <div class="bottombox">
+        <img class="map" src="images/map.jpg" alt="Map" />
+
+        <h1 class="contactTitle">Contact Info</h1>
+        <h2 class="contactInfo">Author: Knighten Cooper</h2>
+        <h2 class="contactInfo">E-mail: knighten.cooper@gmail.com</h2>
+        <h2 class="yellowfootertext">Date: <span id="last_modified"></span></h2>
+        <h2 class="contactInfo">Copyright: © <span id="year"></span></h2>
+
+        <h3 class="footertext">
+          <a class="footerlink" href="https://openweathermap.org/"
+            >Data from OpenWeatherMap</a
+          >
+          |
+          <a
+            class="footerlink"
+            href="https://www.termsfeed.com/live/f1f020a4-ab70-4777-b579-bdb7ec8aaaf1"
+            >Terms of Use</a
+          >
+
+
+        </h3>
+        <p class="social_icons">
+        <a href="https://www.facebook.com/" target="blank"><img  src="images/facebook.jpg" alt="Facebook" ></a>
+        <a href="https://www.youtube.com/" target="blank"><img  src="images/youtube.jpg" alt="Youtube" ></a>
+        <a href="https://www.instagram.com/" target="blank"><img  src="images/instagram.jpg" alt="Instagram" ></a>
+      </p>
+      </div>
+    
+
+    </footer>
+    <!-- The line below this is the web font loader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script src="js/javascript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soda Springs</title>
+    <meta
+      name="description"
+      content="Details about the Soda Springs can be found here."
+    />
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <link href="css/small.css" rel="stylesheet" type="text/css" />
+    <link href="css/medium.css" rel="stylesheet" type="text/css" />
+    <link href="css/large.css" rel="stylesheet" type="text/css" />
+    <link href="css/tablebuild.css" rel="stylesheet" type="text/css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="banner" id="banner">
+      <h1>Friday = Preston Pancakes in the Park!</h1>
+      <h1>9:00 a.m. Friday at the Park.</h1>
+    </div>
+    <header>
+      <img class="logo" src="images/icon.png" alt="Weather Logo Icon" />
+      <h1 class="topTitle font" id="topTitle">Local Weather Updates</h1>
+      <p class="topMotto font">100% Accurate Reporting</p>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <!-- the three "icon" divs create the hamburger icon button -->
+        <li><a class="ham" href="#"> ☰ </a></li>
+        <li>
+          <a
+            class="font"
+            href="https://knightencooper.github.io/lesson-11/index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="font"
+            href="https://knightencooper.github.io/lesson-11/preston.html"
+            >Preston</a
+          >
+        </li>
+        <li>
+          <a
+            class="currentPage"
+            href="https://knightencooper.github.io/lesson-11/soda_springs.html"
+            >Soda Springs</a
+          >
+        </li>
+        <li>
+          <a
+            class="font"
+            href="https://knightencooper.github.io/lesson-11/fish_haven.html"
+            >Fish Haven</a
+          >
+        </li>
+        <li>
+          <a
+            class="font"
+            href="https://knightencooper.github.io/lesson-11/storm_center.html"
+            >Storm Center</a
+          >
+        </li>
+        <li>
+          <a
+            class="font"
+            href="https://knightencooper.github.io/lesson-11/gallery.html"
+            >Gallery</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="herodiv">
+        <picture class="photoA">
+          <source media="(max-width:500px)" srcset="images/small1.jpg" />
+          <source media="(max-width:700px)" srcset="images/medium1.jpg" />
+          <source media="(max-width:700px)" srcset="images/large1.jpg" />
+          <img class="photoA" src="images/large1.jpg" alt="Soda Springs town" />
+        </picture>
+        <section class="stats">
+          <h2>Weather Summary</h2>
+          <p>High: <span id="high"></span> °F</p>
+          <p>Wind Speed: <span id="windSpeed">12</span> mph</p>
+          <p>Wind Chill: <span id="windChill"></span> °F</p>
+          <p>Humidity: <span id="humidity"></span> %</p>
+          <p>Currently: <span id="currently"></span></p>
+        </section>
+      </div>
+
+      <table class="five-day-table">
+        <caption>
+          5-Day Forecast
+        </caption>
+
+        <tbody>
+          <tr>
+            <th id="weekday-1"></th>
+            <th id="weekday-2"></th>
+            <th id="weekday-3"></th>
+            <th id="weekday-4"></th>
+            <th id="weekday-5"></th>
+          </tr>
+          <tr>
+            <td id="day-1"></td>
+            <td id="day-2"></td>
+            <td id="day-3"></td>
+            <td id="day-4"></td>
+            <td id="day-5"></td>
+          </tr>
+
+          <tr>
+            <td><img id="image-1" src="filler" alt="filler"/></td>
+            <td><img id="image-2" src="filler" alt="filler"/></td>
+            <td><img id="image-3" src="filler" alt="filler"/></td>
+            <td><img id="image-4" src="filler" alt="filler"/></td>
+            <td><img id="image-5" src="filler" alt="filler"/></td>
+          </tr>
+          <tr> 
+          <td colspan="5">All Data Provided by OpenWeatherMap</td>
+          </tr>
+        </tbody>
+     </table>
+
+      <img class="oranges" src="images/wreck.jpg" alt="Wrecked Car" />
+
+      <h1 class="font">Icy Roads Increase Wrecks</h1>
+      <p class="font">
+        The recent ice resulted in a 200% increase in car accidents. Last week
+        there were 200 car accidents and this week there were 600 car accidents.
+        The accidents were the result of icy roads and texting. The police have
+        issued a new mandate that says those driving on icy roads, texting, and
+        drunk will have to pay fines up to $10. We urge residents to avoid
+        driving when the road is icy, your friends need texting, and you are
+        drunk.
+      </p>
+      <hr />
+      <section id="town-events">
+        <h2 class="font">Town Events</h2>
+        <div class="events">
+        </div>
+      </section>
+      <hr />
+    </main>
+
+    <footer>
+      <div class="bottombox">
+        <img class="map" src="images/map.jpg" alt="Map" />
+
+        <h1 class="contactTitle">Contact Info</h1>
+        <h2 class="contactInfo">Author: Knighten Cooper</h2>
+        <h2 class="contactInfo">E-mail: knighten.cooper@gmail.com</h2>
+        <h2 class="yellowfootertext">Date: <span id="last_modified"></span></h2>
+        <h2 class="contactInfo">Copyright: © <span id="year"></span></h2>
+
+        <h3 class="footertext">
+          <a class="footerlink" href="https://openweathermap.org/"
+            >Data from OpenWeatherMap</a
+          >
+          |
+          <a
+            class="footerlink"
+            href="https://www.termsfeed.com/live/f1f020a4-ab70-4777-b579-bdb7ec8aaaf1"
+            >Terms of Use</a
+          >
+
+
+        </h3>
+        <p class="social_icons">
+        <a href="https://www.facebook.com/" target="blank"><img  src="images/facebook.jpg" alt="Facebook" ></a>
+        <a href="https://www.youtube.com/" target="blank"><img  src="images/youtube.jpg" alt="Youtube" ></a>
+        <a href="https://www.instagram.com/" target="blank"><img  src="images/instagram.jpg" alt="Instagram" ></a>
+      </p>
+      </div>
+    
+
+    </footer>
+    <!-- The line below this is the web font loader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script src="js/javascript_soda_springs.js"></script>
+  </body>
+</html>
