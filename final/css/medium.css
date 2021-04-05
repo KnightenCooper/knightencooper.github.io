@@ -19,6 +19,13 @@
 
 /* Media Query for medium+ views */
 @media only screen and (min-width: 610px) and (max-width: 920px) {
+	.three {
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: center;
+		font-family:  sans-serif, Arial;
+	  }
+
 	.oranges {
 		display: block;
 		width: 500px;

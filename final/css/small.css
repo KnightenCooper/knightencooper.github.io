@@ -1,8 +1,10 @@
-@media only screen and (max-width: 705px) and (min-width: 0px)  {
-.five-day-table{
-  display: none;
-}
-
+@media only screen and (max-width: 610px) and (min-width: 0px)  {
+	.three {
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: center;
+		font-family:  sans-serif, Arial;
+	  }
 }
 
 .join {
@@ -24,12 +26,7 @@
 }
 
 
-.three {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  font-family:  sans-serif, Arial;
-}
+
 
 .ad {
   background-color: #F5F5EF;

@@ -1,5 +1,11 @@
 @media only screen and (min-width: 920px) and (max-width: 9000000px) {
-
+  .three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    font-family:  sans-serif, Arial;
+  }
+  
     .map {
         float: left;
         padding: 10px;
