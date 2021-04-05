@@ -7,6 +7,9 @@
 	  }
 }
 
+
+
+
 .join {
   font-family: 'Harmattan', sans-serif, Arial, Helvetica;
   color: #2D3047;
@@ -25,12 +28,16 @@
 	background-color: #1F2839;
 }
 
-
+.join_section {
+  text-align: center;
+  padding: 10px;
+}
 
 
 .ad {
   background-color: #F5F5EF;
   border: 15px solid #B69D74;
+  
 
 }
 
