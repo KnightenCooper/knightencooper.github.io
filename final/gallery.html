@@ -3,19 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gallery</title>
+    <title>Home</title>
     <meta
       name="description"
-      content="Details about the Weather in Preston can be found here."
+      content="Details about the Weather in Preston, Placerton, and Springfield can be found here."
     />
-    
     <link href="../lesson5/images/favicon.ico" rel="shortcut icon" />
     <link href="css/small.css" rel="stylesheet" type="text/css" />
     <link href="css/medium.css" rel="stylesheet" type="text/css" />
     <link href="css/large.css" rel="stylesheet" type="text/css" />
+    <link href="css/tablebuild.css" rel="stylesheet" type="text/css" />
     <!-- <link href="../lesson6/css/small.css" rel="stylesheet" type="text/css" />
     <link href="../lesson6/css/medium.css" rel="stylesheet" type="text/css" />
     <link href="../lesson6/css/large.css" rel="stylesheet" type="text/css" /> -->
+    <link href="../lesson-9/css/small.css" rel="stylesheet" type="text/css" />
+    <link href="../lesson-9/css/medium.css" rel="stylesheet" type="text/css" />
+    <link href="../lesson-9/css/large.css" rel="stylesheet" type="text/css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap"
@@ -24,116 +27,194 @@
   </head>
 
   <body>
-    <div class="banner" id="banner">
-      <h1>Friday = Preston Pancakes in the Park!</h1>
-      <h1>9:00 a.m. Friday at the Park.</h1>
-    </div>
     <header>
-      <img class="logo" src="images/icon.png" alt="Weather Logo Icon" />
-      <h1 class="topTitle font" id="topTitle">Local Weather Updates</h1>
-      <p class="topMotto font">100% Accurate Reporting</p>
+      <img class="logo" src="images/icon.png" alt="Chamber Logo Icon" />
+      <h1 class="topTitle font" id="topTitle">Chamber of Commerce</h1>
+      <p class="topMotto font">Springfield Missouri</p>
     </header>
 
     <nav>
       <ul class="navigation">
         <!-- the three "icon" divs create the hamburger icon button -->
         <li><a class="ham" href="#"> ☰ </a></li>
-        <li><a class="font" href="https://knightencooper.github.io/lesson-11/index.html">Home</a></li>
-        <li><a class="font" href="https://knightencooper.github.io/lesson-11/preston.html">Preston</a></li>
-        <li><a class="font" href="https://knightencooper.github.io/lesson-11/soda_springs.html">Soda Springs</a></li>
-        <li><a class="font" href="https://knightencooper.github.io/lesson-11/fish_haven.html">Fish Haven</a></li>
-        <li><a class="font" href="https://knightencooper.github.io/lesson-11/storm_center.html">Storm Center</a></li>
-        <li><a class="currentPage" href="https://knightencooper.github.io/lesson-11/gallery.html">Gallery</a></li>
+        <li>
+          <a
+            class="currentPage"
+            href="https://knightencooper.github.io/lesson-11/index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="font"
+            href="https://knightencooper.github.io/lesson-11/springfield.html"
+            >Springfield</a
+          >
+        </li>
+        <li>
+          <a
+            class="font"
+            href="https://knightencooper.github.io/lesson-11/join.html"
+            >Join</a
+          >
+        </li>
+        <li>
+          <a
+            class="font"
+            href="https://knightencooper.github.io/lesson-11/directory.html"
+            >Directory</a
+          >
+        </li>
+        <li>
+          <a
+            class="font"
+            href="https://knightencooper.github.io/lesson-11/contact.html"
+            >Contact</a
+          >
+        </li>
       </ul>
     </nav>
 
-    <main class="gallery-main">
-      <div class="gallery-image">
-        <img class="galleryimage"
-        src=" images/blankgrey.jpg"
-        data-src=" images/rain.jpg"
-        alt="wet plant"
-      />
-        <p>Rain on plants</p>
-      </div>
-      <div class="gallery-image">
-        <img class="galleryimage"
-        src=" images/blankgrey.jpg"
-        data-src=" images/cloud.jpg"
-        alt="a big cloud"
-      />
-        <p>Cumulus cloud </p>
-      </div>
-      <div class="gallery-image">
-        <img class="galleryimage"
-        src=" images/blankgrey.jpg"
-        data-src=" images/cloudy.jpg"
-        alt="sky with clouds"
-      />
-        <p>Sky looks stormy</p>
-      </div>
-      <div class="gallery-image">
-        <img class="galleryimage"
-        src=" images/blankgrey.jpg"
-        data-src=" images/rain1.jpg"
-        alt="snowing on town"
-      />
-        <p>Snow covers town</p>
-      </div>
-      <div class="gallery-image">
-        <img class="galleryimage"
-        src=" images/blankgrey.jpg"
-        data-src=" images/rain2.jpg"
-        alt="raining weather"
-      />
-        <p>Rains fill pond</p>
-      </div>
-      <div class="gallery-image">
-        <img class="galleryimage"
-        src=" images/blankgrey.jpg"
-        data-src=" images/clouds.jpg"
-        alt="plants and water"
-      />
-        <p>Watering crops</p>
-      </div>
-      <div class="gallery-image">
-        <img class="galleryimage"
-        src=" images/blankgrey.jpg"
-        data-src=" images/cloudy2.jpg"
-        alt="cloudy sky"
-      />
-        <p>Brewing storm</p>
-      </div>
-      <div class="gallery-image">
-        <img class="galleryimage"
-        src=" images/blankgrey.jpg"
-        data-src=" images/clouds2.jpg"
-        alt="dark black and white clouds"
-      />
-        <p>Clouds provide shade</p>
-      </div>      
-      <div class="gallery-image">
-        <img class="galleryimage"
-        src=" images/blankgrey.jpg"
-        data-src=" images/snow.jpg"
-        alt="hill with snow"
-      />
-        <p>Snow on trees</p>
-        </div>
+    <main>
+      <img
+      class="top_image"
+      src="images/events.jpg"
+      alt="Current Events"
+    />
 
-    
+      <div class="three">
+        <section class="ad">
+          <h1>Every Thursday at Getaway Golf: 50% Off for Students!</h1>
+          <p class="font">
+            Getaway Golf is partnering with Springfield Public Schools to offer
+            50% off for all students. 4pm-10pm every Thursday. Getway Gold is
+            located at 3833 E Sunshine.
+          </p>
+        </section>
+        <section class="ad">
+          <h1>April 10th-11th: Annual Show Me Gourd Art Festival</h1>
+          <p class="font">
+            The Show Me Gourd Society is hosting their annual art festival for
+            gourds. It's $5 a ticket and is located at 3001 N Grant Ave from
+            10am-5:30pm. Come by to look at all the gourd art or enter your
+            gourd into the contest.
+          </p>
+        </section>
+        <section class="ad">
+          <h1>Every Monday at Galloway Station: </h1>
+          <p class="font">
+            Every monday from 7pm-9pm, Galloway Station hosts a Irish Music
+            night. Galloway Station is located at 1281 E Republic Rd. All Irish
+            musicians are welcome to perform and anyone can come and enjoy the
+            event. It's a great time to sing songs and enjoy the amazing food
+            offered by Galloway Station.
+          </p>
+        </section>
 
+      </div>
  
-      
-    </main>
+      <section class="ad">
+        <h2 class="font">Reasons to Live in Springfield:</h2>
+        <p class="fontcentered">
+          Ranked in the Top 40 City for Best Quality of Life
+        </p>
+        <p class="fontcentered">
+          Over 900 Unique Restaurants
+        </p>
+        <p class="fontcentered">
+          30% Cheaper Houses than the National Average
+        </p>
+        <p class="fontcentered">
+          Four National Parks and Forests
+        </p>
+        <p class="fontcentered">
+          A Growing and Immersive Downtown
+        </p>
+        <p class="fontcentered">
+          Voted inot the Top 100 Best Cities for Young People
+        </p>
+        <p class="fontcentered">
+          Famous Springfield Cashew Chicken
+        </p>
+        <p class="fontcentered">
+          Only 3 Hours from St.Louis or Kansas City
+        </p>
+        <p class="fontcentered">
+          Close to the Missouri State Fair
+        </p>
+        <p class="fontcentered">
+          The Springfield Art Museum 
+        </p>
+        <p class="fontcentered">
+          Amazing Farmer's Market
+        </p>
+        <p class="fontcentered">
+          "1984" Classic Arcade in Downtown
+        </p>
+        <p class="fontcentered">
+          Location of the World's Largest Fork
+        </p>
+        <p class="fontcentered">
+          An Amazing Community Full of Nice People
+        </p>
+        <p class="fontcentered">
+          Location of Bass Pro Shops
+        </p>
+        <p class="fontcentered">
+          A Massive Zoo
+        </p>
+        <p class="fontcentered">
+          Johnny Morris' Wonders of Wildlife Museum & Aquarium
+        </p>
+        <p class="fontcentered">
+          Two Nationally Recognized Top 100 Integrated Health Systems
+        </p>
+        <p class="fontcentered">
+          A Upscale Airport for Traveling
+        </p>
+      </section>
 
+
+
+
+
+
+
+      <section class="ad">
+        <h1 class="font">Current Weather Goes Here</h1>
+        <p class="font">
+          Temperature: <span id="temp"></span>
+        </p>
+        <p class="font">
+          Description: <span id="description"></span>
+        </p>
+        <p class="font">
+          Humidity: <span id="humidity"></span>
+        </p>
+      </section>
+
+      <section class="ad">
+        <h2 class="fontcentered">3 day forecast</h2>
+        <hr>
+        <p class="fontcentered" id="weekday-1" ></p>
+        <p class="fontcentered" id="day-1" ></p>
+        <hr>
+        <p class="fontcentered" id="weekday-2" ></p>
+        <p class="fontcentered" id="day-2" ></p>
+        <hr>
+        <p class="fontcentered" id="weekday-3" ></p>
+        <p class="fontcentered" id="day-3" ></p>
+      </section>
+     
+
+    </main>
     <footer>
       <div class="bottombox">
-        <img class="map" src="images/map.jpg" alt="Map" />
+        <img class="map" src="images/imgdirector.jpg" alt="Map" />
 
         <h1 class="contactTitle">Contact Info</h1>
-        <h2 class="contactInfo">Author: Knighten Cooper</h2>
-        <h2 class="contactInfo">E-mail: knighten.cooper@gmail.com</h2>
+        <h2 class="contactInfo">Director: David Schap</h2>
+        <h2 class="contactInfo">E-mail: david.schap@gmail.com</h2>
         <h2 class="yellowfootertext">Date: <span id="last_modified"></span></h2>
         <h2 class="contactInfo">Copyright: © <span id="year"></span></h2>
 
@@ -147,23 +228,26 @@
             href="https://www.termsfeed.com/live/f1f020a4-ab70-4777-b579-bdb7ec8aaaf1"
             >Terms of Use</a
           >
-
-
         </h3>
         <p class="social_icons">
-        <a href="https://www.facebook.com/" target="blank"><img  src="images/facebook.jpg" alt="Facebook" ></a>
-        <a href="https://www.youtube.com/" target="blank"><img  src="images/youtube.jpg" alt="Youtube" ></a>
-        <a href="https://www.instagram.com/" target="blank"><img  src="images/instagram.jpg" alt="Instagram" ></a>
-      </p>
+          <a href="https://en.wikipedia.org/wiki/Facebook" target="blank"
+            ><img src="images/facebook.jpg" alt="Facebook"
+          /></a>
+          <a href="https://www.youtube.com/" target="blank"
+            ><img src="images/youtube.jpg" alt="Youtube"
+          /></a>
+          <a href="https://www.instagram.com/" target="blank"
+            ><img src="images/instagram.jpg" alt="Instagram"
+          /></a>
+        </p>
       </div>
-    
-
     </footer>
     <!-- The line below this is the web font loader -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-
-    <script src="../lesson07/js/javascript.js"></script>
-    <script src="../lesson6/js/javascript.js"></script>
-
+<!-- 
+    <script src="js/javascript.js"></script>
+    <script src="js/no_banner.js"></script>
+    <script src="js/gallery.js"></script> -->
+    <script src="js/javascript_soda_springs.js"></script>
   </body>
 </html>
