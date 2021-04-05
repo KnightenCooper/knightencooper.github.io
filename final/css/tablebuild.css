@@ -1,3 +1,5 @@
+
+
 table thead tr {
   background-color: #EBF8FF;
   font-weight: bold;
@@ -5,13 +7,13 @@ table thead tr {
 }
 
 tfoot tr {
-  background-color: #F8B62D;
+  background-color: #B69D74;
   font-size: 15px;
   font-family: 'Harmattan', sans-serif, Arial, Helvetica;
 }
 
 table {
-  width: 900px;
+  width: 600px;
   font-size: 20px;
   background-color: white;
 
@@ -20,7 +22,7 @@ table {
 }
 
 th {
-  background-color: #F8B62D;
+  background-color: #eeeeee;
   color: black;
   padding: 13px 10px;
   font-size: 25px;
@@ -28,11 +30,11 @@ th {
 }
 
 tr {
-  background-color: #fff4dd;
+  background-color: #B69D74;
 }
 
 table tr:nth-of-type(2n) {
-  background-color: #e7f0ed;
+  background-color: #F5F5EF;
 }
 
 td {

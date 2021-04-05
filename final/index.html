@@ -12,6 +12,7 @@
     <link href="css/small.css" rel="stylesheet" type="text/css" />
     <link href="css/medium.css" rel="stylesheet" type="text/css" />
     <link href="css/large.css" rel="stylesheet" type="text/css" />
+    <link href="css/tablebuild.css" rel="stylesheet" type="text/css" />
     <!-- <link href="../lesson6/css/small.css" rel="stylesheet" type="text/css" />
     <link href="../lesson6/css/medium.css" rel="stylesheet" type="text/css" />
     <link href="../lesson6/css/large.css" rel="stylesheet" type="text/css" /> -->
@@ -27,7 +28,7 @@
 
   <body>
     <header>
-      <img class="logo" src="images/blankgrey.jpg" alt="Weather Logo Icon" />
+      <img class="logo" src="images/icon.png" alt="Chamber Logo Icon" />
       <h1 class="topTitle font" id="topTitle">Chamber of Commerce</h1>
       <p class="topMotto font">Springfield Missouri</p>
     </header>
@@ -126,7 +127,7 @@
         </section>
       </div>
       <div class="towns"></div>
-      <script src="js/javascript.js"></script>
+
 
       <section class="ad">
         <h2 class="font">Join Today!</h2>
@@ -175,21 +176,30 @@
       <section class="ad">
         <h2 class="font">Current Weather Goes Here</h2>
         <p class="font">
-          This will be the weather. the current weather information, obtained
-          from the One Call API at openweathermap.org (Links to an external
-          site.). (Note that you must use this particular API and not the ones
-          used with the weather site project) and include the following: - the
-          current temperature, current condition description, and humidity
+          Temperature: <span id="temp"></span>
+        </p>
+        <p class="font">
+          Description: <span id="description"></span>
+        </p>
+        <p class="font">
+          Humidity: <span id="humidity"></span>
         </p>
       </section>
 
       <section class="ad">
-        <h2 class="font">3 day forecast</h2>
-        <p class="font">
-          - display and label a three day forecast of the "day" temperature
-          using the current date.
-        </p>
+        <h2 class="fontcentered">3 day forecast</h2>
+        <hr>
+        <p class="fontcentered" id="weekday-1" ></p>
+        <p class="fontcentered" id="day-1" ></p>
+        <hr>
+        <p class="fontcentered" id="weekday-2" ></p>
+        <p class="fontcentered" id="day-2" ></p>
+        <hr>
+        <p class="fontcentered" id="weekday-3" ></p>
+        <p class="fontcentered" id="day-3" ></p>
       </section>
+     
+
     </main>
     <footer>
       <div class="bottombox">
@@ -227,9 +237,10 @@
     </footer>
     <!-- The line below this is the web font loader -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-
+<!-- 
     <script src="js/javascript.js"></script>
     <script src="js/no_banner.js"></script>
-    <script src="js/gallery.js"></script>
+    <script src="js/gallery.js"></script> -->
+    <script src="js/javascript_soda_springs.js"></script>
   </body>
 </html>
