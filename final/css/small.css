@@ -5,8 +5,16 @@
 		text-align: center;
 		font-family:  sans-serif, Arial;
 	  }
-}
 
+}
+@media only screen and (max-width: 690px) and (min-width: 0px)  {
+
+    .embed_map_big {
+      display: none;
+      background-color: #F5F5EF;
+      border: 15px solid #B69D74;
+    }
+}
 
 input {
   width: 100%;
@@ -43,9 +51,19 @@ input {
 .ad {
   background-color: #F5F5EF;
   border: 15px solid #B69D74;
-  
+}
+
+.embed_map_big {
+  background-color: #F5F5EF;
+  border: 15px solid #B69D74;
+}
+
+.embed_map_small {
+  background-color: #F5F5EF;
+  border: 15px solid #B69D74;
 
 }
+
 
 .social_icons {
   text-align: center;

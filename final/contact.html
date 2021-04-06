@@ -131,70 +131,93 @@
         </p>
       </section>
 
-      
       <section class="ad">
-      <form method="GET" action="thanks.html">
-        <fieldset class="form__fieldset">
-          <div class="form__field">
-            <label for="name" class="form__label">Full Name: </label>
-            <input
-              type="text"
-              id="name"
-              class="form__input"
-              name="name"
-              required
-              pattern="[a-zA-Z\s]{5,}"
-            />
-          </div>
+        <form method="GET" action="thanks.html">
+          <fieldset class="form__fieldset">
+            <div class="form__field">
+              <label for="name" class="form__label">Full Name: </label>
+              <input
+                type="text"
+                id="name"
+                class="form__input"
+                name="name"
+                required
+                pattern="[a-zA-Z\s]{5,}"
+              />
+            </div>
 
+            <br />
+
+            <div class="form__field">
+              <label for="email" class="form__label">Email: </label>
+              <input
+                type="email"
+                id="email"
+                class="form__input"
+                name="email"
+                placeholder="example@mail.com"
+              />
+            </div>
+
+            <br />
+
+            <div class="form__field">
+              <label for="telephone" class="form__label">Phone Number: </label>
+              <input
+                type="tel"
+                id="telephone"
+                class="form__input"
+                name="telephone"
+                required
+              />
+            </div>
+
+            <br />
+
+            <label for="comments">Comments:</label>
+            <br />
+            <textarea id="comments" name="comments" rows="4" cols="50">
+            </textarea>
+
+            <br />
+
+            <div class="form__actions">
+              <button type="submit" class="btnprimary" id="submit">
+                Submit
+              </button>
+              <div
+                id="feedback"
+                class="form__feedback"
+                aria-live="assertive"
+                role="alert"
+              ></div>
+            </div>
+          </fieldset>
           <br />
-
-          <div class="form__field">
-            <label for="email" class="form__label">Email: </label>
-            <input
-              type="email"
-              id="email"
-              class="form__input"
-              name="email"
-              placeholder="example@mail.com"
-            />
-          </div>
-
-          <br />
-
-          <div class="form__field">
-            <label for="telephone" class="form__label">Phone Number: </label>
-            <input
-              type="tel"
-              id="telephone"
-              class="form__input"
-              name="telephone"
-              required
-            />
-          </div>
-
-          <br />
-
-          <label for="comments">Comments:</label>
-          <br />
-          <textarea id="comments" name="comments" rows="4" cols="50">
-          </textarea>
-
-          <br />
-
-          <div class="form__actions">
-            <button type="submit" class="btnprimary" id="submit">Submit</button>
-            <div
-              id="feedback"
-              class="form__feedback"
-              aria-live="assertive"
-              role="alert"
-            ></div>
-          </div>
-        </fieldset>
-        <br />
-      </form>
+        </form>
       </section>
+
+      <section class="embed_map_big">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101724.48154915952!2d-93.36636462803322!3d37.17908388792519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cf62f745c8983f%3A0x6bfd6cb31e690da0!2sSpringfield%2C%20MO!5e0!3m2!1sen!2sus!4v1617677812762!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section class="embed_map_small">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101724.48154915952!2d-93.36636462803322!3d37.17908388792519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cf62f745c8983f%3A0x6bfd6cb31e690da0!2sSpringfield%2C%20MO!5e0!3m2!1sen!2sus!4v1617677812762!5m2!1sen!2sus"
+        width="300"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
     </main>
     <footer>
       <div class="bottombox">

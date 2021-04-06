@@ -1,4 +1,11 @@
 
+@media only screen and (min-width: 690px) and (max-width: 999999999999999px) {
+	.embed_map_small {
+		display: none;
+		background-color: #F5F5EF;
+		border: 15px solid #B69D74;
+	  }
+}
 /* Media Query for medium+ views */
 @media only screen and (min-width: 750px) {
 	.navigation {
