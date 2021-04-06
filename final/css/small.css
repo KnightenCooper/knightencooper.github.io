@@ -8,8 +8,14 @@
 }
 
 
-
-
+input {
+  width: 100%;
+  height: 25px;
+ }
+ textarea {
+  width: 100%;
+  height: 70px;
+ }
 .join {
   font-family: 'Harmattan', sans-serif, Arial, Helvetica;
   color: #2D3047;
