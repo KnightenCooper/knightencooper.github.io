@@ -7,9 +7,9 @@
         "death": "https://www.coxhealth.com/",
         "length": 14,
         "order": 1,
-        "birthplace": "Vermont",
+        "birthplace": "https://www.coxhealth.com/",
         "numofchildren": 11,
-        "imageurl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.coxhealth.com%2F&psig=AOvVaw32hAWv61PDodEARkcQVz3T&ust=1617846043540000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiViq2A6"
+        "imageurl": "https://knightencooper.github.io/final/images/homepage2.jpg"
       },
       {
         "name": "Mercy Hospital Springfield",

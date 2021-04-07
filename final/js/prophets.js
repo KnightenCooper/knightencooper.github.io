@@ -15,9 +15,9 @@ fetch(requestURL)
       let h4 = document.createElement("h4");
       let img = document.createElement("img");
 
-      h2.textContent = company[i].name + " " + company[i].lastname;
-      h3.textContent = "Day of Birth: " + company[i].birthdate;
-      h4.textContent = "Location of Birth: " + company[i].birthplace;
+      h2.textContent = company[i].name;
+      h3.textContent = "Phone Number: " + company[i].birthdate;
+      h4.textContent = "Website: " + company[i].birthplace;
       img.setAttribute("src", company[i].imageurl);
       img.setAttribute(
         "alt",
