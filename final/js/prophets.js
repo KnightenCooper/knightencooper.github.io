@@ -1,5 +1,5 @@
 const requestURL =
-  "https://byui-cit230.github.io/canvas-referenced/latter-day-prophets.json";
+  "https://knightencooper.github.io/final/json/directory.json";
 
 fetch(requestURL)
   .then(function (response) {
