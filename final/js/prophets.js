@@ -33,6 +33,17 @@ fetch(requestURL)
       card.appendChild(h4);
       card.appendChild(img);
 
-      document.querySelector("div.prophet-cards").appendChild(card);
+      document.querySelector("#business-cards").appendChild(card);
     }
   });
+
+  
+document.querySelector('#grid-button').addEventListener('click', () => {
+  document.querySelector('#business-cards').classList.remove('business-cards-list');
+  document.querySelector('#business-cards').classList.add('business-cards');
+});
+
+document.querySelector('#list-button').addEventListener('click', () => {
+  document.querySelector('#business-cards').classList.remove('business-cards');
+  document.querySelector('#business-cards').classList.add('business-cards-list');
+});
