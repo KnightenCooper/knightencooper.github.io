@@ -1,18 +1,18 @@
 {
     "company": [
       {
-        "name": "Joseph",
+        "name": "CoxHealth",
         "lastname": "Smith",
-        "birthdate": "23 December 1805",
-        "death": "27 June 1844",
+        "birthdate": "417-269-3000",
+        "death": "https://www.coxhealth.com/",
         "length": 14,
         "order": 1,
         "birthplace": "Vermont",
         "numofchildren": 11,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+        "imageurl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.coxhealth.com%2F&psig=AOvVaw32hAWv61PDodEARkcQVz3T&ust=1617846043540000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiViq2A6"
       },
       {
-        "name": "Brigham",
+        "name": "Mercy Hospital Springfield",
         "lastname": "Young",
         "birthdate": "01 June 1801",
         "death": "29 August 1877",
