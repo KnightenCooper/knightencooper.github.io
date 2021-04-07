@@ -2,15 +2,71 @@
     "company": [
       {
         "name": "CoxHealth",
-        "lastname": "Smith",
-        "birthdate": "417-269-3000",
-        "death": "https://www.coxhealth.com/",
-        "length": 14,
-        "order": 1,
-        "birthplace": "https://www.coxhealth.com/",
-        "numofchildren": 11,
+        "phone": "417-269-3000",
+        "website": "https://www.coxhealth.com/",
+        "imageurl": "https://knightencooper.github.io/final/images/icon.jpg"
+      },
+      {
+        "name": "Bass Pro Shops",
+        "phone": "417-887-7334",
+        "website": "poop",
         "imageurl": "https://knightencooper.github.io/final/images/homepage2.jpg"
       },
+      {
+        "name": "CoxHealth",
+        "phone": "poop",
+        "website": "poop",
+        "imageurl": "https://knightencooper.github.io/final/images/homepage2.jpg"
+      },
+      {
+        "name": "CoxHealth",
+        "phone": "poop",
+        "website": "poop",
+        "imageurl": "https://knightencooper.github.io/final/images/homepage2.jpg"
+      },
+      {
+        "name": "Mercy Hospital",
+        "phone": "poop",
+        "website": "poop",
+        "imageurl": "https://knightencooper.github.io/final/images/homepage2.jpg"
+      },
+      {
+        "name": "CoxHealth",
+        "phone": "poop",
+        "website": "poop",
+        "imageurl": "https://knightencooper.github.io/final/images/homepage2.jpg"
+      },
+      {
+        "name": "CoxHealth",
+        "phone": "poop",
+        "website": "poop",
+        "imageurl": "https://knightencooper.github.io/final/images/homepage2.jpg"
+      },
+      {
+        "name": "CoxHealth",
+        "phone": "poop",
+        "website": "poop",
+        "imageurl": "https://knightencooper.github.io/final/images/homepage2.jpg"
+      },
+      {
+        "name": "CoxHealth",
+        "phone": "poop",
+        "website": "poop",
+        "imageurl": "https://knightencooper.github.io/final/images/homepage2.jpg"
+      },
+      {
+        "name": "CoxHealth",
+        "phone": "poop",
+        "website": "poop",
+        "imageurl": "https://knightencooper.github.io/final/images/homepage2.jpg"
+      },
+
+
+
+
+
+
+
       {
         "name": "Mercy Hospital Springfield",
         "lastname": "Young",
